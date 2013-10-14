@@ -1,0 +1,48 @@
+# Seta as variaveis de ambiente
+SetEnv APPLICATION_ENV trunk
+
+SetEnv APPLICATION_DEBUG 0
+
+# Seta as configurações padrão
+Options -Indexes
+Options +FollowSymLinks
+
+# Adiciona o rewrite
+RewriteEngine On
+
+# Caminho base
+RewriteBase /tryum.com.br
+
+# Condições
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+
+# Regras
+RewriteRule ^.*$ - [NC,L]
+
+RewriteRule ^thumb/(.*)/(.*)/(.*)/(.*)/(.*)$ index.php?param=tbimage&tipo=$1&crop=$2&largura=$3&altura=$4&imagem=$5 [QSA,L]
+#RewriteRule ^arquivos/(.*)\.(css)$ index.php?param=minifycss&file=$1 [QSA]
+
+RewriteRule ^.*$ index.php [NC,L]
+
+# Se não tiver rewrite
+<IfModule !mod_rewrite.c>
+	ErrorDocument 404 index.php
+</IfModule> 
+
+# Adiciona os tipos das fontes
+AddType application/vnd.ms-fontobject .eot
+AddType application/octet-stream .otf .ttf
+AddType application/x-font-woff .woff
+
+# Habilita a compactação no trafego
+<IfModule mod_deflate.c>
+	SetOutputFilter DEFLATE
+	
+	BrowserMatch ^Mozilla/4 gzip-only-text/html
+	BrowserMatch ^Mozilla/4\.0[678] no-gzip
+	BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
+	
+	SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
+</IfModule>

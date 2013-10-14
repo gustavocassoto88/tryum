@@ -1,0 +1,181 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+.hide {
+	display: none;
+}
+
+body, html {
+	font-family: Arial;
+	font-size: 12px;
+	background-color: #ffffff;
+}
+
+body { 
+	overflow-x: hidden;
+}
+
+/*!
+ * Box do erro
+ */
+#msg-box {
+	padding: 5px 10px;
+	position: fixed;
+	top: 8px;
+	color: #333333;
+	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	
+	display: none;
+	
+	z-index: 99999;
+}
+
+div.msg-success {
+	background-color: #DAFFD2;
+	border: 1px solid #9CE28D;
+}
+
+div.msg-error {
+	background-color: #FFD2D5;
+	border: 1px solid #E28D93;
+}
+
+/*!
+ * Site
+ */
+div.site-layout {
+}
+
+ul, li {
+	list-style: none;
+}
+
+
+div.site-top-nav {
+	height: 32px;
+	
+	background: transparent url(../images/bg-top-nav.png) repeat-x;
+	
+	border-bottom: 1px #AAAAAA solid;
+}
+
+div.site-top-nav ul {
+	position: relative;
+}
+
+div.site-top-nav ul li {
+	float: left;
+	display: inline;
+	background: transparent url(../images/bg-nav-separator.png) top right no-repeat;
+}
+
+div.site-top-nav ul li.active {
+	border-bottom: 2px #064f7f solid;
+}
+
+div.site-top-nav ul li ul li.active {
+	border-bottom: 0px #064f7f solid;
+}
+
+div.site-top-nav ul li a {
+	color: #FFFFFF;
+	display: block;
+	text-decoration: none;
+	
+	height: 100%;
+	width: 100%;
+	line-height: 28px;
+	
+	padding: 2px 15px 0px 15px;
+	
+	font-size: 12px;
+}
+
+div.site-top-nav ul li:hover ul {
+	visibility: visible;
+}
+	
+div.site-top-nav ul li ul {
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	visibility: hidden;
+	position: absolute;
+	z-index: 50;
+	
+	display: block;
+	
+	margin-top: 2px;
+	
+	min-width: 150px;
+}
+
+div.site-top-nav ul li ul li {
+	clear: both;
+	
+	background: none;
+	background-color: rgba(0, 0, 0, 0.8);
+	
+	width:100%;
+	display: block;
+}
+
+div.site-top-nav ul li ul li a.hide {
+	display: none;
+}
+
+div.site-top-nav ul li ul li:hover {
+	background-color: rgba(0, 0, 0, 0.9);
+}
+	
+div.site-top-nav ul li ul li a {
+	display: block;
+}
+
+div.site-top-nav ul.login-info {
+	float: right;
+}
+
+div.site-top-nav ul.login-info a.nav-logout {
+	font-weight: bold;
+	font-size: 13px;
+}
+
+div.site-contents {
+	background: transparent url(../images/bg-contents.png) top repeat-x;
+	
+	padding: 0 25px;
+}
+
+div.site-left-breadcrumb {
+	height: 35px;
+	line-height: 35px;
+}
+
+div.site-left-breadcrumb a.hide {
+	display: inline-block !important;
+}
+
+div.site-left-breadcrumb a {
+	color: #666666;
+	text-decoration: none;
+}
+
+div.site-footer {
+	height: 80px;
+}
+
+a.btn-remove-image {
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}

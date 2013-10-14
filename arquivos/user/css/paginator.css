@@ -1,0 +1,64 @@
+div.pagination {
+	text-align: center;
+}
+
+div.pagination ul {
+	display: inline-block;
+	*display: inline;
+	margin: 0 auto;
+}
+
+div.pagination ul li {
+	float: left;
+	
+	margin-left: -1px;
+}
+
+div.pagination ul li a.current {
+	font-weight: bold;
+}
+
+div.pagination ul li a {
+	background: #ffffff;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%);
+	background: linear-gradient(top,  #ffffff 0%,#e5e5e5 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 );
+	
+	height: 20px;
+	line-height: 20px;
+	padding: 2px 12px;
+	
+	border: 1px #cccccc solid;
+	
+	text-decoration: none;
+	
+	color: #333333;
+	
+	display: block;
+}
+
+div.pagination ul li a.border-left {
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 0px;
+	-moz-border-radius-bottomright: 0px;
+	-moz-border-radius-bottomleft: 4px;
+	-webkit-border-radius: 4px 0px 0px 4px;
+	border-radius: 4px 0px 0px 4px;
+}
+
+div.pagination ul li a.border-right {
+	-moz-border-radius-topright: 4px;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	-moz-border-radius-bottomright: 4px;
+	-webkit-border-radius: 0px 4px 4px 0px;
+	border-radius: 0px 4px 4px 0px;
+}
+
+div.pagination ul li a.no-border {
+	
+}

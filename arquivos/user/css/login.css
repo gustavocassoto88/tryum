@@ -1,0 +1,117 @@
+#conteudo_login {
+	width: 300px;
+	height: 400px;
+	padding-left: 35%;
+	padding-top: 5%;
+}
+
+body {
+	background-color: #FFF;
+	font-family: arial;
+	font-size: 12px;
+}
+
+.tryum-logo {
+	background: transparent url(../images/logo.png) center no-repeat;
+	height: 59px;
+	vertical-align: top;
+	margin-bottom: 42px;
+}
+
+.panel-name {
+	margin-top: 11px;
+	text-align: center;
+}
+
+div.formulario {
+	width: 300px;
+	height: 210px;
+	background-color: #FFF;
+	
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #ccc;
+}
+
+div.espaco {
+	height: 35px;
+
+}
+
+form {
+	margin-left: 29px
+}
+
+form label {
+	color: #000;
+	display: block;
+	height: 24px;
+	line-height: 24px;
+}
+
+form input[type=text], form input[type=password] {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border-width: 0px;
+	background-color: #E8FFDB;
+	height: 32px;
+	width: 230px;
+	
+	padding: 0px 5px;
+}
+
+form input[type=submit] {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border-width: 0px;
+	
+	height: 32px;
+	width: 70px;
+	
+	background-color: #E8FFDB;
+	color: #13a4b9;
+	
+	cursor: pointer;
+}
+
+form div.buttons {
+	margin-top: 14px;
+	margin-left: 80px;
+}
+
+form a {
+	color: #000;
+	position: absolute;
+	height: 24px;
+	line-height: 24px;
+	text-decoration: none;
+	margin-left: -170px;
+}
+
+#msg-formulario {
+	padding: 5px 10px;
+	position: fixed;
+	top: 8px;
+	color: #333333;
+	
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	
+	display: none;
+	
+	z-index: 99999;
+}
+
+div.msg-success {
+	background-color: #DAFFD2;
+	border: 1px solid #9CE28D;
+}
+
+div.msg-error {
+	background-color: #FFD2D5;
+	border: 1px solid #E28D93;
+}
