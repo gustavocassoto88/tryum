@@ -19,6 +19,13 @@ class IndexController extends Zend_Controller_Action {
 	}
 
 	/**
+	 *
+	 */
+	public function contatoAction() {
+		
+	}
+
+	/**
 	 * Cria os thumbs
  	 * 
 	 * @name thumbAction

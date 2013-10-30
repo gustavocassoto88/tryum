@@ -11,7 +11,7 @@ Options +FollowSymLinks
 RewriteEngine On
 
 # Caminho base
-RewriteBase /tryum.com.br
+RewriteBase /freela/tryum
 
 # Condições
 RewriteCond %{REQUEST_FILENAME} -s [OR]

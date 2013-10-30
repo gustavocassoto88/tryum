@@ -1,0 +1,50 @@
+{
+	"compass" : {
+		"config" : "config.rb"
+	},
+	"path" : {
+		"js" : {
+			"application" : "arquivos/default/js",
+			"plugins" : "arquivos/default/js/plugins"
+		},
+		"css" : "arquivos/default/css",
+		"scss" : "arquivos/default/scss",
+		"font" : "arquivos/default/font",
+		"image" : "arquivos/default/img",
+		"sprite" : "arquivos/default/img/sprite"
+	},
+	"jshint" : {
+		"options" : {
+			"camelcase" : true,
+			"immed" : true,
+			"indent" : true,
+			"latedef" : true,
+			"newcap" : true,
+			"noarg" : true,
+			"noempty" : true,
+			"quotmark" : true,
+			"undef" : true,
+			"unused" : true,
+			"strict" : true,
+			"trailing" : true,
+			"browser" : true,
+			"globals" : {
+				"jQuery" : true
+			}
+		}
+	},
+	"uglify" : {
+		"files" : {
+			"plugins" : [
+				"jquery.js"
+			],
+			"application" : [
+				"application.js"
+			]
+		},
+		"banner" : "Clickweb Agencia Digital"
+	},
+	"imagemin" : {
+		"optimizationLevel" : 7
+	}
+}

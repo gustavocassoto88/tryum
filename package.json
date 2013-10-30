@@ -1,0 +1,20 @@
+{
+  "name": "tryum",
+  "author": {
+    "name": "Tryum Agencia Digital"
+  },
+  "dependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-uglify": "~0.1.2",
+    "grunt-contrib-watch": "~0.3.1"
+  },
+  "engines": {
+    "node": "0.8.x"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.4.0",
+    "grunt-contrib-compass": "~0.3.0",
+    "grunt-contrib-imagemin": "~0.1.4"
+  }
+}
